@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li {
+    display: flex;
+    flex-direction: row;
+}
