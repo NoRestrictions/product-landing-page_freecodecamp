@@ -92,24 +92,45 @@ nav div:first-child h1, nav ul {
     background-size: cover;
     width: 100%;
     height: 450px;
+    
+}
+
+.content-title, .hero {
+    color: #fff;
+    text-align: center;
 }
 
 .content-title {
-    color: #fff;
+    padding-top: 120px;
+    /* margin-top: 100px; */
 }
 
+ 
 .btn-get-started {
-    border: 1px solid #35B729;
-    padding: 10px;
+    border: 2px solid #fff;
+    padding: 15px 20px;
     text-decoration: none;
-    color: black;
+    color: #fff;
     display: inline-block;
-
+    margin-top: 30px;
+    /* margin-left: px; */
 }
 
 .btn-get-started:hover {
     background: #35B729;
-    color: white;
+    color: white;    
 }
 
+#landingPage div {
+    text-align: center;
+    padding-top: 2em;
+}
 
+#landingPage div h4 {
+    padding-bottom: 2em;
+}
+
+#landingPage div img {
+    max-width: 100%;
+    height: auto;
+}
