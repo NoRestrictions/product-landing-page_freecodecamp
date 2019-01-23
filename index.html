@@ -8,35 +8,43 @@
     <title>Product Landing Page</title>
 </head>
 <body>
-    <header id="header">
-        <div>
-            <img id="header-img" src="https://res.cloudinary.com/navanchure/image/upload/v1548165143/cyclic_reformLogo.png" alt="">
-        </div>
-        
-        <nav id="nav-bar">
-            <li><a class="nav-link" href="#">link 1</a></li>
-            <li><a class="nav-link" href="#">link 2</a></li>
-            <li><a class="nav-link" href="#">link 3</a></li>
-            <li><a class="nav-link" href="#">link 4</a></li>
+    <!-- <header id="header"> -->
+        <nav>
+            <div>
+                <h1><a href="#"><img id="header-img" src="cyclic_reformLogo1.png" alt="logo"></a></h1>
+
+                <!-- <a href="#"><img id="header-img" src="https://res.cloudinary.com/navanchure/image/upload/v1548165143/cyclic_reformLogo.png" alt="image-logo"></a> -->
+            </div>
+    
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
-    </header>
+    <!-- </header> -->
 
     <main>
-        <section id="section-a">
-            <h1>The realtime Javascript backend</h1>
-            <h3>Build powerful web and mobile apps that scale</h3>
-
-            <a href="#" class="btn-get-started">Get Started</a>
+        <section id="hero" class="grid">
+            <div class="content-wrapper">
+                <h1 class="content-title">The realtime Javascript backend</h1>
+                <p>Build powerful web and mobile apps that scale</p>
+    
+                <a href="#section-form-insert" class="btn-get-started">Get Started</a>
+            </div>
+            
         </section>
 
-        <section id="landingPage" class="flex-items">
+        <section id="landingPage" class="grid">
             <div class="details">
                 <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nisi asperiores reprehenderit tenetur, cupiditate sapiente quidem quae voluptatem ut accusantium aperiam necessitatibus atque id!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet quidem beatae aliquid quis, quam natus numquam nobis.</p>
             </div>
             <div class="details">
-                <img src="" alt="">
+                <img src="https://res.cloudinary.com/navanchure/image/upload/v1548189611/pexels-photo-356036.jpg" alt="">
             </div>
         </section>
 
@@ -50,35 +58,36 @@
                 </aside>
 
                 <aside>
-                    <video id="video" src=""></video>    
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/KEeH4EniM3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                 </aside>
             </div>
         </section>
 
         <section>
-            <video id="video" src=""></video>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/1kUE0BZtTRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         
         <section class="grid">
-            <img src="" alt="">
+            <img class="img-pic" src="https://res.cloudinary.com/navanchure/image/upload/v1548189609/solar-panel-array-power-sun-electricity-159397.jpg" alt="">
+            <div>
+                <h5>Modular and extensible</h5>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestiae excepturi voluptas nulla quam praesentium, aperiam, distinctio eveniet consequuntur dicta quae inventore iusto cum porro doloribus? Praesentium rem deleniti ipsa.</p>
+            </div>
+
+            <img class="img-pic" src="https://res.cloudinary.com/navanchure/image/upload/v1548189556/pexels-photo-414886.jpg" alt="">
             <div>
                 <h5>Modular and extensible</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestiae excepturi voluptas nulla quam praesentium, aperiam, distinctio eveniet consequuntur dicta quae inventore iusto cum porro doloribus? Praesentium rem deleniti ipsa.</p>
             </div>
 
-            <img src="" alt="">
+            <img class="img-pic" src="https://res.cloudinary.com/navanchure/image/upload/v1548189597/pexels-photo-671585.jpg" alt="">
             <div>
                 <h5>Modular and extensible</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestiae excepturi voluptas nulla quam praesentium, aperiam, distinctio eveniet consequuntur dicta quae inventore iusto cum porro doloribus? Praesentium rem deleniti ipsa.</p>
             </div>
 
-            <img src="" alt="">
-            <div>
-                <h5>Modular and extensible</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestiae excepturi voluptas nulla quam praesentium, aperiam, distinctio eveniet consequuntur dicta quae inventore iusto cum porro doloribus? Praesentium rem deleniti ipsa.</p>
-            </div>
-
-            <img src="" alt="">
+            <img class="img-pic"  src="https://res.cloudinary.com/navanchure/image/upload/v1548189601/pexels-photo-414943.jpg" alt="">
             <div>
                 <h5>Modular and extensible</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestiae excepturi voluptas nulla quam praesentium, aperiam, distinctio eveniet consequuntur dicta quae inventore iusto cum porro doloribus? Praesentium rem deleniti ipsa.</p>
@@ -86,7 +95,7 @@
 
         </section>
 
-        <section class="form-insert">
+        <section id="section-form-insert">
             <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Email Address" required>
@@ -94,7 +103,7 @@
                 <input type="submit" value="Submit" id="submit">
             </form>
         </section>
-
+    </main>
         <footer>
             <ul>
                 <li><a href="#">Privacy</a></li>
@@ -104,6 +113,6 @@
             <span>Copyright 2019, Original Trombones</span>
         </footer>
 
-    </main>
+    
 </body>
 </html>

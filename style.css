@@ -3,21 +3,113 @@
     padding: 0;
 }
 
-#header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* header */
+nav ul {
+    list-style: none;
+    padding: 0;
+    /*background: #35B729;*/
+}
+
+nav ul li a {
+    color: #35B729;
+    text-decoration: none;
+    padding: .8em 1rem;
+    display: block;
+    line-height: 1;
+} 
+
+nav ul li {
+    border-bottom: 1px dotted #35B729;
+}
+
+nav div:first-child {
+    background: #fff;
+}
+
+nav div:first-child h1 {
+    line-height: 0;
+    padding: .8rem 0rem;
+    text-align: center;
+}
+
+nav div:first-child h1, nav ul {
+    margin: 0;
 }
 
 #header-img {
-    max-width: 100%;
     height: auto;
+    width: 80px; 
 }
 
-nav li {
-    list-style: none;
+/* Media queries */
+
+/* header */
+@media only screen and (min-width: 30em) {
+     nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     nav ul {
+         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+
+    nav div:first-child h1 {
+        padding: 0;
+        margin-left: 1rem;
+    }
+
+     nav ul li {
+        border-bottom: none;
+     }
+
+     nav ul li a {
+         padding: 1.2rem 1rem;
+     } 
+ }
+
+
+
+/* main */
+
+.img-pic {
+    display: block;
+    width:  100%;
+    height: auto;
+
 }
 
-nav li {
-    display: flex;
-    flex-direction: row;
+.content-wrapper {
+    background: url(https://res.cloudinary.com/navanchure/image/upload/v1548264944/sustainability-3300869_1920.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
 }
+
+.content-title {
+    color: #fff;
+}
+
+.btn-get-started {
+    border: 1px solid #35B729;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+
+}
+
+.btn-get-started:hover {
+    background: #35B729;
+    color: white;
+}
+
+
