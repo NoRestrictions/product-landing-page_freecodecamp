@@ -130,7 +130,59 @@ nav div:first-child h1, nav ul {
     padding-bottom: 2em;
 }
 
+#landingPage div p {
+    padding: 0 10px;
+}
+
 #landingPage div img {
     max-width: 100%;
     height: auto;
+}
+
+#landingPage {
+    padding-bottom: 15px;
+}
+
+/* vid-placement */
+
+.vid-placement > p {
+    padding: 0 10px;
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+
+.row h4, .row p {
+    padding: 0 10px;
+}
+
+.row p {
+    padding-bottom: 15px;
+}
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* padding-top: 75%; */
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* width="853" height="480" */
+}
+
+.img-pic {
+    padding-bottom: 2em; 
+    padding-top: 1em;
+}
+
+#section-form-insert {
+    margin-top: 20px;
+    padding: 10px 15px;
 }
